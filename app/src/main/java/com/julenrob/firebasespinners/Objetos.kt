@@ -7,6 +7,6 @@ class Objetos {
     data class Ciudad (var id:String = "id_def", var nombre:String = "nombre_def", var poblacion:Int = 0){
     }
 
-    data class Monumento (var id:String, var cod_poblacion:String, var nombre:String){
-    }
+    //data class Monumento (var id:String, var cod_poblacion:String, var nombre:String){
+    //}
 }
