@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "292187866534",
+    "project_id": "fir-spinner-d0dfd",
+    "storage_bucket": "fir-spinner-d0dfd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292187866534:android:b4c1190f62489f38d63b67",
+        "android_client_info": {
+          "package_name": "com.julenrob.firebasespinners"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292187866534-5st37htqb3k3efd8ctgibk62jfc90mck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlRuyFdPmb_vDmE8_BGkCW84Tre_nARuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292187866534-5st37htqb3k3efd8ctgibk62jfc90mck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

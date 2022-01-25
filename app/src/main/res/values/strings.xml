@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirebaseSpinners</string>
+    <string name="prefs_file">com.julenrob.firebasespinners.PREFERENCE_FILE_KEY</string>
+</resources>
