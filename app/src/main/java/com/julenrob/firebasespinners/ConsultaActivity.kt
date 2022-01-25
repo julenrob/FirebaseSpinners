@@ -56,7 +56,7 @@ class ConsultaActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                 var cod = ""
 
                 GlobalScope.launch{
-                    var document = getDocumentSnapshotPais(pais)
+                    var document = getDocumentSnapshotPais()
 
                     println("DOC: " + document)
 
@@ -116,7 +116,7 @@ class ConsultaActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                 listaMonumentos = mutableListOf()
 
                 GlobalScope.launch {
-                    var document = getDocumentSnapshotCiudad(ciudad, db)
+                    var document = getDocumentSnapshotCiudad(db)
                     var codCiudad = ""
 
                     for (doc in document){
@@ -171,13 +171,13 @@ class ConsultaActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
 
     }
 
-    private suspend fun getDocumentSnapshotPais(pais:String): List<DocumentSnapshot> {
+    private suspend fun getDocumentSnapshotPais(): List<DocumentSnapshot> {
         val snapshot = db.collection("paises").get().await()
         return snapshot.documents
 
     }
 
-    private suspend fun getDocumentSnapshotCiudad(ciudad: String, db: FirebaseFirestore): List<DocumentSnapshot> {
+    private suspend fun getDocumentSnapshotCiudad(db: FirebaseFirestore): List<DocumentSnapshot> {
         val snapshot = db.collection("ciudades").get().await()
         return snapshot.documents
     }
